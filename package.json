@@ -1,0 +1,35 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "description": "One app to assist you in different ways",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Lucas Santana",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "electron": "^24.1.2",
+    "electron-builder": "^23.6.0",
+    "youtube-dl-exec": "^2.4.1",
+    "ytdl-core": "^4.11.4"
+  },
+  "dependencies": {
+    "youtube-dl-exec": "^2.4.1",
+    "ytdl-core": "^4.11.4"
+  },
+  "build": {
+    "appId": "lucas.santana",
+    "productName": "YtDownloader",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "nsis":{
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
