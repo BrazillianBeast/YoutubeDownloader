@@ -27,7 +27,7 @@
     "directories": {
       "output": "build"
     },
-    "nsis":{
+    "nsis": {
       "allowToChangeInstallationDirectory": true,
       "oneClick": false
     }
